@@ -1,7 +1,7 @@
 import React from 'react';
 
 type Props = {
-  selectedFilter: string;
+  selectedFilter: 'all' | 'active' | 'completed';
   onFilterChange: (value: 'all' | 'active' | 'completed') => void;
   query: string;
   changeTitleUsedQuery: (e: React.ChangeEvent<HTMLInputElement>) => void;
